@@ -9,6 +9,8 @@ class Main {
     do{
     System.out.println("enter word here: ");
     String word = input.nextLine();
+    word=word.toLowerCase();
+    word=word.replaceAll(" ", "");
     if (ded.isPalindrome(word) == true) {
       System.out.println("That was a palindrome!");
     } else {
